@@ -12,17 +12,19 @@ namespace IOTextFiles
 			STable _STable = new STable();
 			IOSettings _io = new IOSettings(_STable);
 
-			Console.WriteLine(_STable.stable [0]);
 
-			if (_io.save())
+
+			if (_io.open())
 			{
-				Console.WriteLine("Tablizata e zapametena uspeshno.");
+				Console.WriteLine("Tablizata e prochetena uspeshno.");
 
 			}
 			else
 			{
-				Console.WriteLine("Tablizata NE e zapametena uspeshno.");
+				Console.WriteLine("Tablizata NE e prochetena uspeshno.");
 			}
+			Console.WriteLine(_STable.stable[2]);
+
 		}
 	}
 }
